@@ -1,0 +1,150 @@
+/* IMPORTANDO AS FONTES UTILIZADAS */
+
+/* Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ===================================== */
+
+:root {
+    --button-color: #E089F5;
+    --asset-color: #7A0099;
+    --bg-text-color: #E88DFF;
+    --course-info-bg: #DF60FF;
+    --title-font: "Inter", sans-serif;
+    --title-content: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    list-style: none;
+    font-family: "Poppins", "Inter";
+}
+
+body {
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 1rem;
+
+    & .brand__logo {
+        width: 3.25rem;
+        height: 3.25rem;
+    }
+
+    & #toggleTheme {
+        font-size: 1.5rem;
+    }
+
+    & .header__toggle {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.header__nav, .header__toggle {
+    min-width: 30%;
+}
+
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-text-color);
+}
+
+.header__nav {
+    display: none;
+}
+
+.menu--principal {
+    gap: 1rem;
+    background-color: white;
+}
+
+.menu--mobile {
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+    border-top: 1px solid var(--asset-color);
+
+    & menu__item {
+        width: 100%;
+    }
+
+    & .menu__link {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem 1rem;
+        gap: .5rem;
+
+        & .menu__icon, menu__text {
+            color: black;
+        }
+    }
+
+}
+
+.menu__icon.active, .menu__text.active, .menu__link.active {
+    color: white;
+    font-weight: 600;
+}
+
+.menu__icon:hover, .menu__text:hover, .menu__link:hover {
+    color: var(--asset-color);
+    font-weight: 600;
+}
+
+.menu__icon {
+    font-size: 1.5rem;
+}
+
+.menu__text {
+    font-size: .75rem;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+    .header {
+        position: fixed;
+        border-bottom: 1px solid black;
+        padding: 1rem 4rem;
+    }
+
+    .nav--mobile {
+        display: none;
+    }
+    .header__nav {
+        display: flex;
+    }
+
+    .header__toggle{
+        min-width: 40%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .header {
+        padding: 1rem 15rem;
+    }
+}
