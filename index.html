@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -70,5 +70,195 @@
             </li>
         </ul>
     </nav>
+    <main id="home">
+        <div class="main__content">
+            <h1> Desenvolvendo Habilidades e <i>Experiências</i> </h1>
+            <p> Beatriz Monteiro | Apaixonada por criar experiências web amigáveis e designs visuais impactantes</p>
+            <ul class="menu menu--social">
+                <li> 
+                    <a class="menu__link" href="https://github.com/itsmebia"> <i class="menu__icon bi bi-github"> </i> </a> 
+                </li>
+                <li> 
+                    <a class="menu__link" href="www.linkedin.com/in/beatrizmonteiro7"> <i class="menu__icon bi bi-linkedin"></i> </a> 
+                </li>
+                <li> 
+                    <a class="menu__link" href="https://www.behance.net/beatrizmonteiro61"> <i class="menu__icon bi bi-behance"></i> </a> 
+                </li>
+            </ul>
+            <button class="btn btn--primary"> 
+                <span> Acompanhe meus projetos </span>
+            </button>
+        </div>
+        <div class="main__content2">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ztVV54sPOns?si=trw26Hhp_B2I0023" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </main>
+    <section class="Habilidades">
+        <h2> Conhecimento nas Principais Tecnologias do Mercado </h2>
+        <ul class="Habilidades__Lista">
+            <li class="Habilidades__Item">
+                 <img class="Habilidades__Logo" src="assets/imgs/css.png" alt="Logo do CSS">
+            </li>
+            <li class="Habilidades__Item">
+                <img class="Habilidades__Logo" src="assets/imgs/html.png" alt="Logo do HTML">
+            </li>
+            <li class="Habilidades__Item">
+                <img class="Habilidades__Logo" src="assets/imgs/js.png" alt="Logo do JavaScript">
+            </li>
+            <li class="Habilidades__Item">
+                <img class="Habilidades__Logo" src="assets/imgs/figma.png" alt="Logo do Figma">
+            </li>
+        </ul>
+    </section>
+    <section class="Projetos" id="projetos">
+        <h2> Projetos </h2>
+        <div class="projetos__container">
+            <div class="projetos__card">
+                <img class="card__cover" src="assets/imgs/Projeto01.jpg" alt="Laptop Screen">
+                <div class="card__body">
+                    <h3 class="card__title"> Projeto 01 </h3>
+                    <p class="card__descricao"> Descrição do Projeto </p>
+                    <ul class="card__list">
+                        <li> Lista de Funcionalidades </li>
+                    </ul>
+                    <div class="card__buttons">
+                        <button class="btn btn--primary"> 
+                            <span> Prévia do projeto </span>
+                        </button>
+                        <button class="btn"> 
+                            <span> Repositório </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/itsmebia">
+                <button class="btn btn--primary">
+                  <span>Ver Todos os Projetos</span>
+                  <i class="bi bi-arrow-up-right"></i>
+                </button>  
+              </a>
+        </div>
+    </section>
+    <section id="sobre" class="about">
+        <div class="about__content1">
+          <img class="about__photo" src="assets/imgs/PROFILE PIC_compress.png" alt="">
+          <div class="about__description">
+            <h2>Sobre mim</h2>
+            <p> Descrição sobre mim, Habilidades e Experiências
+            </p>  
+            <div class="about__icons">
+              <i class="bi bi-translate"></i>
+              <span>Inglês: Intermediário</span>
+            </div>
+            <div class="description__buttons">
+              <a href="www.linkedin.com/in/beatrizmonteiro7" target="_blank">
+                <button class="btn btn--primary">
+                  <span>Conecte-se Comigo</span>
+                  <i class="bi bi-arrow-up-right"></i>
+                </button> 
+              </a>
+              <a href="">
+                <button class="btn">
+                  <span>Currículo</span>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="about__content2">
+          <div class="col1">
+            <div class="row1">
+              <h3>Formação</h3>
+              <h4>Nome do Curso</h4>
+              <span>(Mês e Ano do Inicio) - (Mês e Ano do Fim) </span>
+              <div class="about__icons">
+                <i class="bi bi-bank"></i>
+                <span>Nome da Instituição</span>
+              </div>
+              <div class="about__icons">
+                <i class="bi bi-mortarboard"></i>
+                <span>Grau de Escolaridade</span>
+              </div>
+            </div>
+            <div class="row2">
+              <h3>Experiências</h3>
+              <h4>Nome do Cargo</h4>
+              <span>Nome da Empresa | (Mês e Ano do Inicio) - (Mês e Ano do Fim)</span>
+              <span>Breve descrição sobre as atividades desenvolvidas no cargo.</span>
+              <ul class="about__list">
+                <li class="about__item">Lista de Habilidades</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col2">
+            <h3>Cursos</h3>
+            <div id="accordion">
+              <div class="accordion__item active">
+                <button class="accordion__header start">
+                  <span>Nome do Curso</span>
+                  <i class="bi bi-caret-down-fill"></i>
+                </button>
+                <div class="accordion__body">
+                  <p>
+                    Nome da Instituição | Mês e Ano do Inicio - Mês e Ano do Fim
+                  </p>
+                  <p>
+                    Breve descrição as habilidades desenvolvidas 
+                  </p>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <button class="accordion__header">
+                  <span>Nome do Curso</span>
+                  <i class="bi bi-caret-down-fill"></i>
+                </button>
+                <div class="accordion__body">
+                  <p>
+                    Nome da Instituição - Duração
+                  </p>
+                  <p>
+                    Breve descrição das atividades desenvolvidas
+                  </p>
+                </div>
+              </div>
+              </div>
+            </div>
+      </section>
+      <section id="contato" class="contact">
+        <h2>Contate-me</h2>
+        <p>Estou disponível para novos projetos e conexões. Entre em contato por e-mail e conecte-se comigo nas redes sociais.
+        </p>
+        <ul class="menu menu--social">
+          <li>
+            <a class="menu__link" href="https://github.com/itsmebia" target="_blank">
+              <i class="menu__icon bi bi-github"></i>
+              <span>GitHub</span>
+            </a>
+          </li>
+          <li>
+            <a class="menu__link" href="www.linkedin.com/in/beatrizmonteiro7" target="_blank">
+              <i class="menu__icon bi bi-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+          </li>
+          <li>
+            <a class="menu__link" href="https://www.behance.net/beatrizmonteiro61" target="_blank">
+              <i class="menu__icon bi bi-behance"></i>
+              <span>Behance</span>
+            </a>
+          </li>
+        </ul>
+        <a href="#">
+          <button class="btn btn--primary">
+            <span class="email">email@hotmail.com</span>
+          </button>  
+        </a>
+      </section>
+    <footer>
+        <p>
+            © 2024 Beatriz Monteiro. Todos os direitos reservados. Desenvolvido por <a href="https://github.com/itsmebia"> Beatriz Monteiro </a>
+        </p>
+    </footer>
+    <script src="assets/js/scripts.js"></script>
 </body>
 </html>
